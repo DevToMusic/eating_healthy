@@ -1,4 +1,5 @@
 
+let box = document.querySelector('.textbox');
 
 const basis = [ "Rigatoni", "Rice", "Spaghettie", "Potatoes" ]
 
@@ -9,6 +10,7 @@ const vegetales = [
     "Onience",
     "Hot Peppers"
     
+
 
 ]
 const vegetales1 = [
@@ -99,3 +101,14 @@ const fire = () =>{
 }
 
 
+box.onclick = function() {
+     box.style.backgroundColor = "#fff";
+}
+box.onmouseleave = function(){
+    box.style.animation = "shadow-drop-2-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both";
+
+}
+box.onmouseover = function(){
+    box.style.animation = "shadow-drop-3-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both";
+
+}
