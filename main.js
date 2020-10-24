@@ -1,5 +1,6 @@
 
 let box = document.querySelector('.textbox');
+let infobox = document.querySelector('.infobox');
 
 const basis = [ "Rigatoni", "Rice", "Spaghettie", "Potatoes" ]
 
@@ -7,7 +8,7 @@ const vegetales = [
 
  
     "Garlic",
-    "Onience",
+    "Onions",
     "Hot Peppers"
     
 
@@ -110,5 +111,13 @@ box.onmouseleave = function(){
 }
 box.onmouseover = function(){
     box.style.animation = "shadow-drop-3-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both";
+
+}
+infobox.onmouseleave = function(){
+    infobox.style.animation = "shadow-drop-2-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both";
+
+}
+infobox.onmouseover = function(){
+    infobox.style.animation = "shadow-drop-3-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both";
 
 }
